@@ -1,58 +1,180 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>Portfolio</title>
-    <meta name="description" content="Визитка Галеева Рашида" />
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <title>Билеты ФК Звезда</title>
+    <meta name="description" content="Билеты ФК Звезда" />
     <meta name="keywords" content="HTML" />
     <meta name="author" content="Галеев Рашид" />
     <meta charset="utf-8">
 </head>
 <body>
-    <header>
-        <h1>Визитка старосты m33061 Галеева Рашида</h1>
-        <h2>Данный сайт пренозначен для преподавателй Галеева Рашида, чтобы они знали старосту</h2>
-        <nav>
-            <ul>
-                <li><a href="#awesome">Обо мне</a></li>
-                <li><a href="#something">Любимая цитата</a></li>
-                <li><a href="#other">Список мероприятий в ИТМО</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+            <div class="container">
+                <div class="header_inner">
+                    <div class="header_logo">ФК Звезда</div>
+                    <nav class="nav">
+                        <a class="nav_link" href="#registr">Регистрация</a>
+                        <a class="nav_link" href="#match">Выбор матча</a>
+                        <a class="nav_link" href="#return">Возврат билета</a>
+                        <a class="nav_link" href="#conact">Контакты</a>
+                    </nav>
+                </div>
+            </div>
     </header>
     <main>
-        <img src="Photos/photo.jpg"  style="max-width: 33%;">
-        <section id="awesome">
-            <h2>Что стоит знать обо мне:</h2>
-            <ol>
-                <li>Закончил школу №156</li>
-                <li>Учусь на 3 курсе университета ИТМО</li>
-                <li>Пишу на C#, Java</li>
-                <li>У меня своя команда квн <b>Гендерная интрига</b></li>
-            </ol>
+        <div class="intro">
+            <div class="container">
+                <div class="intro_inner">
+                    <h1 class="intro_title">Welcome!</h1>
+
+                    <a class="btn" href="#learn">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <section class="section" id="learn">
+        <div class="container">
+            <div class="section_header">
+                <h2 class="section_title">Для чего данный сайт?</h2>
+                <div class="section_text">
+                    <p>
+                        Данный сайт предназначен для онлайн продажи билетов на
+                        ФК Звезда
+                    </p>
+                </div>
+            </div>
+            <div class="about">
+                <div class="about_item">
+                    <div class="about_img">
+                        <img src="Photos/team2.jpg" width="512" height="340" alt="">
+                    </div>
+                </div>
+                <div class="about_item">
+                    <div class="about_img">
+                        <img src="Photos/photo.png" width="340" height="340" alt="">
+                    </div>
+                </div>
+                <div class="about_item">
+                    <div class="about_img">
+                        <img src="Photos/team.jpg" width="512" height="340"  alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
         </section>
-        <section id="something">
-            <h2>Моя любимая цитата:</h2>
-            <p>Сложнее всего начать действовать, все остальное зависит только от упорства.</p>
-            <cite>Амелия Эрхарт</cite>
+
+<section class="section" id="registr">
+    <div class="container">
+        <div class="section_header">
+            <h2 class="section_title">Регистрация</h2>
+            <div class="section_text">
+                <p>
+                    Вы можете зарегистрироваться на нашем сайте.
+                    Напоминаем, что только зарегистрированные пользователи
+                    могут покупать билеты на матчи
+                </p>
+            </div>
+            <div class="services">
+                <div class="services_item">
+                    <img class="services_icon" src="Photos/инст.png" width="95" height="50" alt="">
+
+                    <div class="services_tittle"><b>Инстаграм</b></div>
+                    <div class="services_text">У вас есть возможность зарегистрироваться через
+                    Инстаграм</div>
+                </div>
+                <div class="services_item">
+                    <img class="services_icon" src="Photos/телефон.png" width="50" height="50" alt="">
+
+                    <div class="services_tittle"><b>Логин и пароль/телефон</b></div>
+                    <div class="services_text">У вас есть возможность зарегистрироваться через
+                        логин и пароль или через телефон</div>
+                </div>
+                <div class="services_item">
+                    <img class="services_icon" src="Photos/вк.png" width="75" height="50" alt="">
+
+                    <div class="services_tittle"><b>ВКонтакте</b></div>
+                    <div class="services_text">У вас есть возможность зарегистрироваться через
+                        ВКонтакте</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <section class="section" id="match">
+            <div class="container">
+                <div class="section_header">
+                    <h2 class="section_title">Выбор матча</h2>
+                    <div class="section_text">
+                        <p>
+                            Вы можете выбрать матч, сектор и место
+                        </p>
+                    </div>
+                    <div class="services">
+                        <div class="services_item">
+                            <img class="services_icon" src="Photos/мяч.png" width="40" height="40" alt="">
+
+                            <div class="services_tittle"><b>Выбор матча</b></div>
+                            <div class="services_text">У вас есть возможность выбрать матч</div>
+                        </div>
+                        <div class="services_item">
+                            <img class="services_icon" src="Photos/сектор.jpg" width="75" height="45" alt="">
+
+                            <div class="services_tittle"><b>Выбор сектора</b></div>
+                            <div class="services_text">У вас есть возможность выбрать сектор</div>
+                        </div>
+                        <div class="services_item">
+                            <img class="services_icon" src="Photos/place.png" width="75" height="35" alt="">
+
+                            <div class="services_tittle"><b>Выбор места</b></div>
+                            <div class="services_text">У вас есть возможность выбрать место</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="other">
-            <h2>Я активный студент, потому что:</h2>
-            <ol>
-                <li>Я староста группы</li>
-                <li>Член сборной по ММА</li>
-                <li>Отвесвенный мегафакльутета в Мегабатле</li>
-                <li>У меня своя команда квн <b>Гендерная интрига</b></li>
-            </ol>
+
+        <section class="section" id="return">
+            <div class="container">
+                <div class="section_header">
+                    <h2 class="section_title">Возврат билета</h2>
+                    <div class="section_text">
+                        <p>
+                            У зарегистрировавшихся пользователей
+                            есть возможность возврата билета
+                        </p>
+                    </div>
+                    <div class="services">
+                        <div class="services_item">
+                            <img class="services_icon" src="Photos/билет.png" width="50" height="50" alt="">
+
+                            <div class="services_tittle"><b>Возврат билета</b></div>
+                            <div class="services_text">У вас есть возможность вернуть билет</div>
+                        </div>
+                        <div class="services_item">
+                            <img class="services_icon" src="Photos/деньги.png" width="70" height="35" alt="">
+
+                            <div class="services_tittle"><b>Выбор способа возврата денег</b></div>
+                            <div class="services_text">У вас есть возможность выбрать способ возврата денег</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-
-
-
-<footer>
+<footer class="footer" id="conact">
     тел:+79811310941 | mail: grashidik@gmail.com | tg: @grashid
-    <nav><a href="https://vk.com/grashid">ВК</a> | <a href="https://www.instagram.com/rash_ik_/">ИНСТ</a></nav>
 </footer>
-
 </body>
 </html>
 
